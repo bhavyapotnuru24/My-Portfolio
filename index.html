@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhavya Cyberpunk Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Canvas for neon grid/particles -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#home">🏠 Home</a></li>
+    <li><a href="#skills">🛠 Skills</a></li>
+    <li><a href="#projects">🌌 Projects</a></li>
+    <li><a href="#contact">📡 Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+  <div class="neon-card">
+    <h1>👋 Hi, I'm Bhavya</h1>
+    <p>Welcome to my Portfolio. Explore my web development projects.</p>
+    <a href="#projects" class="btn">Explore Projects</a>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>🛠 Skills</h2>
+  <div class="skills-container">
+    <div class="skill"><span>HTML</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+    <div class="skill"><span>CSS</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+    <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+    <div class="skill"><span>Java</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+    <div class="skill"><span>AI/ML</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<!-- Projects Section -->
+<section id="projects">
+  <h2>🌌 Projects</h2> <br>
+  <div class="projects-container">
+  <div class="card">
+  <h3>MFLIX website</h3>
+  <p>A movie website which inspires people to achieve their dreams.</p>
+  <button onclick="window.open('https://bhavyapotnuru24.github.io/Mflix/','_blank')">View Project</button>
+  </div>
+    <div class="card">
+      <h3>Deepfake website</h3>
+      <p>A platform that detects AI-generated images.</p>
+      <button onclick="window.open('https://www.figma.com/make/ygCH6Mnw9tkVEWFuElfRg6/DEFAKE-Mobile-App-UI?t=n59KP0MLRFT1Aaou-20&fullscreen=1','_blank')">View Project</button>
+    </div>
+    <div class="card">
+  <h3>E-Commerce System</h3>
+  <p>An e-commerce platform for handling product listings, carts, and orders.</p>
+    <button class="btn" onclick="openGallery()">View Project</button>
+</div>
+<div id="galleryPopup" class="popup">
+  <span class="close" onclick="closeGallery()">×</span>
+  <div class="popup-slider">
+    <img src="image1.png" class="slide active">
+    <img src="image2.png" class="slide">
+    <img src="image3.png" class="slide">
+     <img src="image4.png" class="slide">
+     <img src="image5.png" class="slide">
+     <img src="image6.png" class="slide">
+     <img src="image7.png" class="slide">
+     <img src="image8.png" class="slide">
+     <img src="image9.png" class="slide">
+      <img src="image10.png" class="slide">
+     <img src="image11.png" class="slide">
+     <img src="image12.png" class="slide">
+     <img src="image13.png" class="slide">
+    
+  </div>
+  <div class="popup-controls">
+    <button onclick="prevSlide(this)">◀</button>
+    <button onclick="nextSlide(this)">▶</button>
+  </div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+  <h2>📡 Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
