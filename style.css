@@ -274,4 +274,32 @@ a:hover ~ .cursor, button:hover ~ .cursor {
   height: 40px;
   border: 2px solid #ff66ff;
   box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff66ff;
+
 }
+* About Me Neon Card */
+.about-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+  border: 2px solid magenta; /* neon border */
+  border-radius: 20px;
+  box-shadow: 0 0 20px magenta, 0 0 40px magenta;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  line-height: 1.6;
+  margin-bottom:15px;
+  text-shadow:0 0 10px #ff00ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
